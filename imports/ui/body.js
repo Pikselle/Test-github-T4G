@@ -3,7 +3,7 @@ import './presentation_projet.js';
 import './poster_une_annonce.js';
 import './infos_pratique.js';
 import './qui_sommes_nous.js';
-
+import './entrez_votre_recherche.js';
 
 Session.set('templateAAfficher', '');
 
@@ -32,7 +32,10 @@ Template.body.events({
 
   Session.set('templateAAfficher', 't_qui_sommes_nous');
  },
+ 'click .entrezvotrerecherche'(event){
 
+  Session.set('templateAAfficher', 't_entrez_votre_recherche');
+  },
 
 
 
