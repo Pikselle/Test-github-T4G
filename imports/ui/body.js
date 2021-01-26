@@ -1,7 +1,7 @@
 import './body.html';
 import './presentation_projet.js';
 import './poster_une_annonce.js';
-import './qui_sommes_nous.js';
+import './infos_pratique.js';
 
 
 Session.set('templateAAfficher', '');
@@ -16,12 +16,15 @@ Template.body.helpers({
 
 Template.body.events({
     'click .presentation'(event){
+
      Session.set('templateAAfficher', 't_presentation');
    },
-   'click .post'(event){
+   'click .post_annonce'(event){
+
     Session.set('templateAAfficher', 't_post_annonce');
   },
-  'click .qui'(event){
-   Session.set('templateAAfficher', 't_qui_sommes_nous');
+  'click .infos_pratique'(event){
+
+   Session.set('templateAAfficher', 't_infos');
   }
 });

@@ -1,127 +1,85 @@
 <body>
-
-
-
-  <section class="hero is-link">
-<div class="hero-body">
-  <div class="container">
-    <h1 class="title has-text-centered">
-    Petites annonces
-    </h1>
-    <h2 class="subtitle">
-
-      <br/>
-        <br/>
-          <br/>
-            <br/>
-      <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-
-            <img src="https://www.stickers2ouf.com/img/cms/One_Piece_Logo.png" width="300" >
-
-
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
-            <a class="presentation navbar-item">
-              Présentation du projet
-            </a>
-
-
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link" href="">
-                Postez une annonce
-              </a>
-              <div class="post navbar-dropdown">
-                  <a class="post navbar-item">
-                    Poster
-                  </a>
-                  <a class="navbar-item">
-                    Jobs
-                  </a>
-                  <a class="navbar-item">
-                    Contact
-                  </a>
-                  <hr class="navbar-divider">
-                  <a class="navbar-item">
-                    Report an issue
-                  </a>
-          </div>
-          </div>
-
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link" href="">
-                Infos Pratiques
-              </a>
-                <div class="navbar-dropdown">
-           <a class="qui navbar-item">
-             Qui sommes-nous??
-           </a>
-           <a class="navbar-item">
-             Jobs
-           </a>
-           <a class="navbar-item">
-             Contact
-           </a>
-           <hr class="navbar-divider">
-           <a class="navbar-item">
-             Report an issue
-           </a>
-         </div>
-
-
-
-
-                </div>
-            </div>
-  <br/>
-    <br/>
-        <br/>
-
-
-
-
-
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-link">
-                  <strong>Sign up</strong>
-                </a>
-                <a class="button is-light">
-                  Log in
-                </a>
+	<section class="hero is-info">
+		<div class="hero-body">
+			<div class="container">
+				<h1 class="title has-text-centered">Petites annonces</h1>
+				<h2 class="subtitle">
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<nav class="navbar" role="navigation" aria-label="main navigation">
+						<div class="navbar-brand">
+							<img src="https://www.stickers2ouf.com/img/cms/One_Piece_Logo.png" width="300" >
+							<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+								<span aria-hidden="true"></span>
+								<span aria-hidden="true"></span>
+								<span aria-hidden="true"></span>
+							</a>
+						</div>
+						<div id="navbarBasicExample" class="navbar-menu">
+							<div class="navbar-start">
+								<div class="navbar-item has-dropdown is-hoverable">
+									<a class="navbar-link" href="">rechercher une annonce</a>
+									<div class="post navbar-dropdown">
+										<a class="post navbar-item">entrer votre recherche</a>
+										<a class="navbar-item">categories</a>
+										<hr class="navbar-divider">
+										<a class="navbar-item">aide</a>
+									</div>
+								</div>
+								<div class="navbar-item has-dropdown is-hoverable">
+									<a class="navbar-link" href="">mon compte</a>
+									<div class="post navbar-dropdown">
+										<a class="post navbar-item">information du compte</a>
+										<a class="navbar-item">poster une annonce</a>
+										<a class="navbar-item">messagerie</a>
+										<hr class="navbar-divider">
+										<a class="navbar-item">aide</a>
+									</div>
+								</div>
+								<div class="navbar-item has-dropdown is-hoverable">
+									<a class=" infos_pratique navbar-link" href="">Infos Pratiques</a>
+									<div class="navbar-dropdown">
+										<a class="qui navbar-item">Qui sommes-nous??</a>
+										<a class="navbar-item">legislation du travail pour les mineurs</a>
+										<hr class="navbar-divider">
+										<a class="navbar-item">signalement d'un problème</a>
+									</div>
+								</div>
+               </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    <br/>
-   </h2>
-    </div>
-  </div>
-  </section>
-
-
-  {{> Template.dynamic template=currentTrucaffiche}}
-  <footer class= "has-background-info">
-<p class="has-text-white-bis">Contacter nous:</p>
-<ul>
-   <li>Sur instagram: <a href="https://www.instagram.com/maya_fln/"><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" width="50"
-     height="50"></a></li>
-   <li>Sur snapchat: <a href="https://twitter.com/mayaourttucoco"><img src="https://www.freeiconspng.com/thumbs/logo-twitter-png/black-lines-twitter-icon-symbol-18.png" width="50"
-    height="50"></a></li>
-</ul>
-  </footer>
-</body>
-
-
-<template name="truc">
-  <h2> OUI </h2>
-</template>
+							<br/>
+							<br/>
+							<br/>
+							<div class="navbar-end">
+								<div class="navbar-item">
+									<div class="buttons">
+										<a class="button is-primary"><strong>Sign up</strong></a>
+										<a class="button is-light">Log in</a>
+										<div></div>
+									</div>
+								</div>
+                </div>
+							</nav>
+							<br/>
+						</h2>
+					</div>
+				</div>
+			</section>
+			<br/>
+			{{>
+			 Template.dynamic template=currentTrucaffiche}}
+       <footer class= "has-background-info">
+     <p class="has-text-white-bis">Contacter nous:</p>
+     <ul>
+        <li>Sur instagram: <a href="https://www.instagram.com/maya_fln/"><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" width="50"
+          height="50"></a></li>
+        <li>Sur twitter: <a href="https://twitter.com/mayaourttucoco"><img src="https://www.freeiconspng.com/thumbs/logo-twitter-png/black-lines-twitter-icon-symbol-18.png" width="50"
+         height="50"></a></li>
+     </ul>
+       </footer>
+		</body>
+		<template name="truc">
+			<h2> OUI </h2>
+		</template>
