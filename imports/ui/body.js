@@ -2,6 +2,7 @@ import './body.html';
 import './presentation_projet.js';
 import './poster_une_annonce.js';
 import './infos_pratique.js';
+import './qui_sommes_nous.js';
 
 
 Session.set('templateAAfficher', '');
@@ -26,5 +27,13 @@ Template.body.events({
   'click .infos_pratique'(event){
 
    Session.set('templateAAfficher', 't_infos');
-  }
+ },
+ 'click .quisommesnous'(event){
+
+  Session.set('templateAAfficher', 't_qui_sommes_nous');
+ },
+
+
+
+
 });
