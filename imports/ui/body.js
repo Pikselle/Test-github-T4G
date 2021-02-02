@@ -6,6 +6,8 @@ import './qui_sommes_nous.js';
 import './entrez_votre_recherche.js';
 import './categories.js';
 import './aide.js';
+import './legislation_travail_mineurs.js';
+import './informations_du_compte.js';
 
 Session.set('templateAAfficher', '');
 
@@ -46,5 +48,13 @@ Template.body.events({
 
     Session.set('templateAAfficher', 't_aide');
     },
+    'click .infocompte'(event){
+
+     Session.set('templateAAfficher', 't_infosducompte');
+     },
+     'click .legislation'(event){
+
+      Session.set('templateAAfficher', 't_legislation');
+      },
 
 });
