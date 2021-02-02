@@ -7,7 +7,11 @@ import './entrez_votre_recherche.js';
 import './categories.js';
 import './aide.js';
 import './legislation_travail_mineurs.js';
+import './signalement_dun_probleme.js';
+import './poster_une_annonce.js';
 import './informations_du_compte.js';
+import './messagerie.js';
+import './aide2.js';
 
 Session.set('templateAAfficher', '');
 
@@ -56,5 +60,18 @@ Template.body.events({
 
       Session.set('templateAAfficher', 't_legislation');
       },
+      'click .signalementdunprobleme'(event){
+
+       Session.set('templateAAfficher', 't_signalement_dun_probleme');
+       },
+       'click .messagerie'(event){
+
+        Session.set('templateAAfficher', 't_messagerie');
+        },
+        'click .aide2'(event){
+
+         Session.set('templateAAfficher', 't_aide2');
+         },
+
 
 });
