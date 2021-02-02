@@ -4,6 +4,8 @@ import './poster_une_annonce.js';
 import './infos_pratique.js';
 import './qui_sommes_nous.js';
 import './entrez_votre_recherche.js';
+import './categories.js';
+import './aide.js';
 
 Session.set('templateAAfficher', '');
 
@@ -36,7 +38,13 @@ Template.body.events({
 
   Session.set('templateAAfficher', 't_entrez_votre_recherche');
   },
+  'click .categories'(event){
 
+   Session.set('templateAAfficher', 't_categories');
+   },
+   'click .aide'(event){
 
+    Session.set('templateAAfficher', 't_aide');
+    },
 
 });
