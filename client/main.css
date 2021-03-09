@@ -1,4 +1,13 @@
-body {
-  padding: 15px;
-  font-family: cursive;
+html {
+  height: 100%;
 }
+.corps {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.corps {position: relative;
+  padding-bottom: 10rem;}
+.enbas {position: absolute; bottom: 0;
+width: 100%;
+height: 10rem;}
