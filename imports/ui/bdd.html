@@ -1,0 +1,15 @@
+<template name="t_aide">
+  <h2 class="title">Aide</h2>
+<!-- Bouton pour initialiser la bdd des annonces -->
+  <a class="init has-text-black">Initialiser BDD</a>
+
+<!-- Pour chacune des annonces -->
+ {{#each toutes_les_annonces}}
+ <!-- On affiche le titre de l'annonce -->
+ <h2 class="title has-text-primary">{{titre_annonce}} </h2>
+ <h3 class="subtitle has-text-info">{{contenu}}</h3>
+ <p> Annonce créée par {{email_employeur}}</p>
+ {{/each}}
+
+
+  </template>
