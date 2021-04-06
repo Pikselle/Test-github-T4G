@@ -1,3 +1,5 @@
+
+import  '../imports/api/annonce.js';
 import { Meteor } from 'meteor/meteor';
 
 Meteor.startup(() => {
