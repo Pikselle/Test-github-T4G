@@ -1,4 +1,17 @@
 <template name="t_entrez_votre_recherche">
-  <h2 class="title">entrez votre recherche </h2>
+  <h2 class="title">Entrez votre recherche les fréros</h2>
+
+    <!-- Bouton pour initialiser la bdd des annonces -->
+      <a class="init has-text-black">Liste des annonces</a>
+
+    <!-- Pour chacune des annonces -->
+     {{#each toutes_les_annonces}}
+     <!-- On affiche le titre de l'annonce -->
+     <h2 class="title has-text-primary">{{titre_annonce}} </h2>
+     <h3 class="subtitle has-text-info">{{contenu}}</h3>
+     <h3 class="subtitle has-text-info">{{trancheage}}</h3>
+     <p> Annonce créée par {{email_employeur}}</p>
+     {{/each}}
+
 
   </template>
