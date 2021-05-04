@@ -12,6 +12,9 @@ import './poster_une_annonce.js';
 import './informations_du_compte.js';
 import './messagerie.js';
 import './aide2.js';
+import './navbar.js';
+import './compte.js';
+import './recherche.js';
 
 Session.set('templateAAfficher', '');
 
@@ -72,6 +75,23 @@ Template.body.events({
 
          Session.set('templateAAfficher', 't_aide2');
          },
+
+          'click .recherche'(event){
+
+           Session.set('templateAAfficher', 't_recherche');
+           },
+           'click .compte'(event){
+
+            Session.set('templateAAfficher', 't_compte');
+            },
+            'click .infos_pratique'(event){
+
+             Session.set('templateAAfficher', 't_infos');
+             },
+
+
+
+
 
 
 });
