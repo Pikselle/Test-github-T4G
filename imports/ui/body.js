@@ -15,7 +15,8 @@ import './aide2.js';
 import './navbar.js';
 import './compte.js';
 import './recherche.js';
-
+import './login.js';
+import './signin.js' ;
 Session.set('templateAAfficher', '');
 
 
@@ -88,7 +89,14 @@ Template.body.events({
 
              Session.set('templateAAfficher', 't_infos');
              },
+          'click .login'(event){
 
+              Session.set('templateAAfficher', 't_login');
+             },
+             'click .signin'(event){
+
+                 Session.set('templateAAfficher', 't_signin');
+                },
 
 
 
