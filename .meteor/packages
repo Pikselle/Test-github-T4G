@@ -24,3 +24,6 @@ insecure                # Allow all DB writes from clients (for prototyping)
 session
 jcbernack:reactive-aggregate
 reactive-dict
+accounts-ui
+accounts-google
+accounts-password
