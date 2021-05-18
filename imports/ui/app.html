@@ -1,27 +1,19 @@
 
-                
+
 
         <div class="main">
-            {{#if isUserLogged}}
+            {{if isUserLogged}}
 
                 {{> form }}
 
-                <div class="filter">
-                    <button id="hide-completed-button">
-                        {{#if hideCompleted}}
-                                Show All
-                        {{else}}
-                                Hide Completed
-                        {{/if}}
-                    </button>
-                </div>
 
-                <ul class="tasks">
-                    {{#each tasks}}
-                        {{> task}}
-                    {{/each}}
-                </ul>
             {{else}}
                 {{> login }}
             {{/if}}
         </div>
+        <div class="main">
+                    {{if isUserLogged}}
+                        <div class="user">
+                            {{getUser.username}} 🚪
+                        </div>
+                        {{> form }}

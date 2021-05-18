@@ -8,3 +8,15 @@ Template.mainContainer.helpers({
     return isUserLogged();
   }
 });
+Template.mainContainer.events({
+  ...,
+  'click .user'() {
+    Meteor.logout();
+  }
+});
+Template.mainContainer.helpers({
+  ...,
+  getUser() {
+    return getUser();
+  }
+});
