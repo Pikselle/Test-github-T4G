@@ -49,16 +49,20 @@
 								<div class="navbar-end">
 									<div class="navbar-item">
 										<div class="buttons">
+
+											{{#if currentUser}}
+											<a class="button color2 logout">Se déconnecter</a>
+											{{else}}
 											<a class="button color2 signin"><strong>S'inscrire</strong></a>
 											<a class="button is-light login ">Se connecter</a>
-											<a class="button color2 logout">Se déconnecter</a>
-											
+											{{/if}}
+
 
 										</div>
 									</div>
 									</div>
                </div>
-              </div>
+
 
 
 							</nav>
@@ -94,3 +98,7 @@
 		<template name="truc">
 			<h2> OUI </h2>
 		</template>
+<template name="dashboard">
+	<p>Merci d'avoir crée un compte </p>
+	<p><a href="#" class="logout">Logout</a></p>
+</template>
