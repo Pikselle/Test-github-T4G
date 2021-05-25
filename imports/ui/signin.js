@@ -9,9 +9,13 @@ Template.t_signin.events({
 
     const target = e.target;
     const username = target.username.value;
-    const datedenaissance = target.datedenaissance.value;
-    const password = target.password.value;
 
-    Meteor.signinWithPassword(username,datedenaissance, password);
+    const password = target.password.value;
+//  Meteor.signinWithPassword(username, password){
+    Accounts.createUser({
+      email:emailVar,
+      passwword: passwordVar
+    });
+
   }
 });
