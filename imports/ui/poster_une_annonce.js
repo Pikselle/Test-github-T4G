@@ -1,7 +1,7 @@
 import './poster_une_annonce.html';
 
 Template.t_post_annonce.events({
-  'submit .nouveau_set'(event) {
+  'submit .formulaire_annonce'(event) {
     // Prevent default browser form submit
     event.preventDefault();
 
@@ -10,7 +10,7 @@ Template.t_post_annonce.events({
     const nom_de_annonce = target.nom_de_l_annonce;
     const categorie_de_l_annonce = target.categorie;
     const qualifications_requises = target.qualifications;
-    const decription_de_l_annonce = target.description;
+    const description_de_l_annonce = target.description;
     const utilisateur  = "michel";
     const date_post_annonce ="18 juin";
 // Appel à une méthode qu'il va falloir créer : annonces.ajouter !
