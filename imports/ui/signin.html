@@ -1,31 +1,30 @@
 <template name="t_signin">
 
 
+  <form class="login-form">
+    <div>
+        <label htmlFor="username">Adresse mail</label>
 
-  <form class="signin-form">
-        <div>
-            <label >Username</label>
+        <input
+                type="text"
+                placeholder="Adresse mail"
+                name="Adresse mail"
+                required
+        />
+    </div>
 
-            <input
-                    type="text"
-                    placeholder="Username"
-                    name="username"
-                    required
-            />
-        </div>
+    <div>
+        <label htmlFor="password">Mot de passe</label>
 
-        <div>
-            <label >Password</label>
-
-            <input
-                    type="password"
-                    placeholder="Password"
-                    name="password"
-                    required
-            />
-        </div>
-        <div>
-            <button type="submit">Sign In</button>
-        </div>
-    </form>
+        <input
+                type="password"
+                placeholder="Mot de passe"
+                name="Mot de passe"
+                required
+        />
+    </div>
+    <div>
+        <button type="submit">S'inscrire</button>
+    </div>
+</form>
 </template>
