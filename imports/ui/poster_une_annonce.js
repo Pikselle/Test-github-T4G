@@ -7,10 +7,10 @@ Template.t_post_annonce.events({
 
     // variables qui stockent les infos du formulaire avec leur nom
     const target = event.target;
-    const nom_de_annonce = target.nom_de_l_annonce;
-    const categorie_de_l_annonce = target.categorie;
-    const qualifications_requises = target.qualifications;
-    const description_de_l_annonce = target.description;
+    const nom_de_annonce = target.nom_de_l_annonce.value;
+    const categorie_de_l_annonce = target.categorie.value;
+    const qualifications_requises = target.qualifications.value;
+    const description_de_l_annonce = target.description.value;
     const utilisateur  = "michel";
     const date_post_annonce ="18 juin";
 // Appel à une méthode qu'il va falloir créer : annonces.ajouter !
