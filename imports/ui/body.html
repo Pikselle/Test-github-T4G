@@ -49,16 +49,21 @@
 								<div class="navbar-end">
 									<div class="navbar-item">
 										<div class="buttons">
+
+											{{#if currentUser}}
+											<a class="button color2 logout">Se déconnecter</a>
+											{{else}}
 											<a class="button color2 signin"><strong>S'inscrire</strong></a>
 											<a class="button is-light login ">Se connecter</a>
-											<a class="button color2 logout">Se déconnecter</a>
+											{{/if}}
 
 
 										</div>
 									</div>
 									</div>
                </div>
-              </div>
+							 </div>
+
 
 
 							</nav>
@@ -82,15 +87,19 @@
 			</div>
 
        <footer class="colorstylee enbas" >
-
-					 <p class="has-text-white">Contactez nous:</p>
-							<p>Sur instagram: <a href="https://www.instagram.com/maya_fln/"><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" width="50"
-								height="50"></a></p>
-				        <p>Sur twitter: <a href="https://twitter.com/momosahma"><img src="https://www.freeiconspng.com/thumbs/logo-twitter-png/black-lines-twitter-icon-symbol-18.png" width="50"
-				         height="50"></a></p>
-
+     <p class="has-text-white-bis has-text-centered">Contactez nous:</p>
+     <ul>
+        <li class="has-text-centered">Sur instagram: <a href="https://www.instagram.com/maya_fln/"><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" width="50"
+          height="50"></a></li>
+        <li class="has-text-centered">Sur twitter: <a href="https://twitter.com/momosahma"><img src="https://www.freeiconspng.com/thumbs/logo-twitter-png/black-lines-twitter-icon-symbol-18.png" width="50"
+         height="50"></a></li>
+     </ul>
        </footer>
 		</body>
 		<template name="truc">
 			<h2> OUI </h2>
 		</template>
+<template name="dashboard">
+	<p>Merci d'avoir crée un compte </p>
+	<p><a href="#" class="logout">Logout</a></p>
+</template>
