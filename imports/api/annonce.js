@@ -13,7 +13,7 @@ export const bdd_annonces = new Mongo.Collection('annonces');
 // email_employeur, titre_annonce, contenu
 const annonce1 = {email_employeur:"maureen.metge@magicmakers.fr",titre_annonce:"CHERCHE QUELQU'UN POUR GARDER MON CHIEN",contenu:"Bonjour je suis Mau et je pars en vacances 2 jours, gardez mon chien SVP"};
 const annonce2 = {email_employeur:"joe.ging@magicmakers.fr",titre_annonce:"Need 1 tank pour le raid",contenu:"Wsh oné 1 gild tré fo on need 1 tank pour natria lol mdr vi1"};
-const annonce3 = {email_employeur: "aurelienarjk@gmail.com", titre_annonce:"Besoin de répérer ma cote cassée",contenu:"jme suis pris un coup dans les cotes j'ai mal j'arrive plus a respirer ", date:" 16 avril 2004 , 19h30 ",trancheage:"aucune", contact:"0670225944"};
+const annonce3 = {email_employeur: "aurelienarjk@gmail.com", titre_annonce:"Besoin de répérer ma cote cassée",contenu:"jme suis pris un coup dans les cotes j'ai mal j'arrive plus a respirer ", date:" 16 avril 2004 , 19h30 ",tranche_age:"aucune", contact:"0670225944"};
 
 
 // Si le code est lancé sur le serveur, on publie la BDD car c'est lui qui va la gérer
@@ -39,13 +39,13 @@ Meteor.methods({
   },
 
 
-  'annonces.ajouter'(nom_du_set, lieu_du_set, animateur)
+  'annonces.ajouter'(nom_de_annonce, categorie_de_l_annonce, qualifications_requises, description_de_l_annonce, utilisateur, date_post_annonce)
     {
     bdd_annonces.insert({
-          nom_annonce : nom_de_l_annonce,
-          nom_lieu : lieu_du_set,
-          email_animateur_responsable: animateur,
-          statut : "occupe",
+        email_employeur : utilisateur,
+          titre_annonce : nom_de_annonce,
+          contenu: description_de_l_annonce,
+          date : date_post_annonce,
     });
     },
 });
