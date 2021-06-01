@@ -35,6 +35,17 @@ Meteor.methods({
     //bdd_annonces.insert(annonce1);
     //bdd_annonces.insert(annonce2);
     bdd_annonces.insert(annonce3);
+
   },
 
+
+  'annonces.ajouter'(nom_du_set, lieu_du_set, animateur)
+    {
+    bdd_annonces.insert({
+          nom_annonce : nom_de_l_annonce,
+          nom_lieu : lieu_du_set,
+          email_animateur_responsable: animateur,
+          statut : "occupe",
+    });
+    },
 });

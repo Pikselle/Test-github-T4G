@@ -97,7 +97,10 @@ Template.body.events({
 
                  Session.set('templateAAfficher', 't_signin');
                 },
-
+                'click .logout':function(event){
+                    event.preventDefault();
+                    Meteor.logout();
+                  }
 
 
 
