@@ -51,7 +51,12 @@
 										<div class="buttons">
 
 											{{#if currentUser}}
+											{{#if loggingIn}}
+											<p>EN TRAIN DE SE CONNECTER</p>
+											{{else}}
+											<div class="has-background-info">{{pseudomec}}</div>
 											<a class="button color2 logout">Se déconnecter</a>
+											{{/if}}
 											{{else}}
 											<a class="button color2 signin"><strong>S'inscrire</strong></a>
 											<a class="button is-light login ">Se connecter</a>
