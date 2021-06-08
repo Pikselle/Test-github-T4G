@@ -17,7 +17,7 @@ import './compte.js';
 import './recherche.js';
 import './login.js';
 import './signin.js' ;
-Session.set('templateAAfficher', '');
+Session.set('templateAAfficher', 't_post_annonce');
 
 
 Template.body.helpers({
