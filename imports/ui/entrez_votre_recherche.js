@@ -29,4 +29,7 @@ Template.t_entrez_votre_recherche.events({
     'click .init'(event){
        Meteor.call('annonces.initialiser');
    },
+   'click .rep'(event){
+      Session.set('templateAAfficher', 't_reponse');
+    },
  });
