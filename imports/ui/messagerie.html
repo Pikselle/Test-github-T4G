@@ -1,4 +1,10 @@
 <template name="t_messagerie">
-  <h2 class="title">messagerie en ligne</h2>
-
+  <h2 class="title">Messagerie en ligne</h2>
+  {{#each tous_les_messages}}
+  <!-- On affiche le titre de l'annonce -->
+  <div class="box">
+  <h2 class="title has-text-primary">Envoyé par {{envoyeur}} </h2>
+  <h3 class="subtitle has-text-info">{{message}}</h3>
+  </div>
+  {{/each}}
   </template>

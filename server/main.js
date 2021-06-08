@@ -1,4 +1,4 @@
-
+import  '../imports/api/messages.js';
 import  '../imports/api/annonce.js';
 import { Meteor } from 'meteor/meteor';
 
