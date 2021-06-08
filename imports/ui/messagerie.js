@@ -13,7 +13,8 @@ Template.t_messagerie.onCreated(function bodyOnCreated() {
 
 Template.t_messagerie.helpers({
   // Fonction qui récupère et qui envoie toutes les annonces qui sont dans la bdd
-  toutes_les_annonces() {
-    return bdd_messages.find({"destinataire" : Meteor.user().username});
+  tous_les_messages() {
+    return bdd_messages.find({destinataire : Meteor.user().emails[0].address});
+
   },
 });

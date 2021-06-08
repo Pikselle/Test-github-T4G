@@ -6,6 +6,7 @@ import { ReactiveDict } from 'meteor/reactive-dict';
 
 
 
+
 // se lance à la création du template t_entrez_votre_recherche
 Template.t_entrez_votre_recherche.onCreated(function bodyOnCreated() {
   // Sert à rendre l'affichage réactif, sans avoir besoin de recharger la page
@@ -30,6 +31,9 @@ Template.t_entrez_votre_recherche.events({
        Meteor.call('annonces.initialiser');
    },
    'click .rep'(event){
-      Session.set('templateAAfficher', 't_reponse');
+      const target = event.target;
+      const gens = target.value;
+      Session.set('templateAAfficher', 'repondre_a_une_annonce');
+      Session.set('destinataire', gens);
     },
  });

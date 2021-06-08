@@ -23,5 +23,6 @@ Meteor.methods({
           envoyeur : envoyeur,
           message: message
     });
+    console.log("MESSAGE AJOUTE");
   }
 });

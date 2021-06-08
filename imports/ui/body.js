@@ -17,6 +17,7 @@ import './compte.js';
 import './recherche.js';
 import './login.js';
 import './signin.js' ;
+import './reponse.js';
 Session.set('templateAAfficher', 't_post_annonce');
 
 
@@ -30,7 +31,7 @@ Template.body.helpers({
       return Meteor.user().emails[0].address;
     },
     pseudomec:function(){
-      return Meteor.user().Username;
+      return Meteor.user().username;
     }
 });
 
