@@ -25,6 +25,13 @@ Template.body.helpers({
       console.log("oui");
       return Session.get('templateAAfficher');
     },
+    mailmec:function(){
+      console.log(Meteor.user());
+      return Meteor.user().emails[0].address;
+    },
+    pseudomec:function(){
+      return Meteor.user().username;
+    }
 });
 
 Template.body.events({

@@ -27,3 +27,4 @@ reactive-dict
 accounts-ui
 accounts-google
 accounts-password
+accounts-base
