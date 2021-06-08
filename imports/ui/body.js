@@ -30,7 +30,7 @@ Template.body.helpers({
       return Meteor.user().emails[0].address;
     },
     pseudomec:function(){
-      return Meteor.user().username;
+      return Meteor.user().Username;
     }
 });
 

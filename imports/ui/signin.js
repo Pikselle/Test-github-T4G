@@ -12,11 +12,13 @@ Template.t_signin.events({
     const target = e.target;
     const emailVar= target.Adressemail.value;
     const passwordVar = target.Motdepasse.value;
+    const usernameVar = target.username.value;
+    console.log(usernameVar);
 //  Meteor.signinWithPassword(username, password){
     Accounts.createUser({
       email:emailVar,
       password: passwordVar,
-      username: "BGDU92",
+      username: usernameVar,
       profile: {
         datenaissance: "23/11/96",
         lastName: "Stewart",
