@@ -11,11 +11,11 @@ Template.t_post_annonce.events({
     const categorie_de_l_annonce = target.categorie.value;
     const qualifications_requises = target.qualifications.value;
     const description_de_l_annonce = target.description.value;
-    const utilisateur  = "michel";
+    const utilisateur  = Meteor.user().emails[0].address;
     const date_post_annonce ="18 juin";
 // Appel à une méthode qu'il va falloir créer : annonces.ajouter !
     Meteor.call('annonces.ajouter', nom_de_annonce, categorie_de_l_annonce, qualifications_requises, description_de_l_annonce, utilisateur, date_post_annonce);
-
+Session.set('templateAAfficher', 't_entrez_votre_recherche');
   }
 
 })
